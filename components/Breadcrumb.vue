@@ -12,6 +12,7 @@
 <style scoped>
 section {
   background-color: rgb(134, 134, 134);
+  padding: 0.15rem;
 }
 
 ul {
