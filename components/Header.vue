@@ -2,7 +2,7 @@
   <section class="flex-between">
     <div>
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeCm1vDXefK5__M4yqDOdOWcnVGqAlW9wkA&usqp=CAU"
+        src="@/assets/img/drinks.jpg"
         alt="Tu tienda de scrap favorita"
       />
     </div>
