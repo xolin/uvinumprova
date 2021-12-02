@@ -1,7 +1,7 @@
 <script lang="ts">
 export default ({
   props: {
-  items: Array,
+    items: Array,
   }
 })
 </script>
@@ -31,7 +31,11 @@ export default ({
             </td>
             <td>{{ item.attributes.current_unit_price }} €</td>
             <td>
-              {{ item.attributes.quantity }}
+              <select>
+                <option v-for="(option, index) in item.attributes.stock" :value="option" :selected="item.attributes.quantity === index ? true : false ">
+                  {{option}}
+                </option>
+              </select>
             </td>
             <td class="bold">{{ item.attributes.price_without_tax }} €</td>
             <td><a href="#">Eliminar</a></td>
