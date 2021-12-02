@@ -1,6 +1,6 @@
 <script lang="ts">
 import CartDataService from "~/services/CartDataService";
-import responseData from "~~/types/responseData";
+import responseData from "~/types/responseData";
 
 export default {
   data() {

@@ -1,19 +1,19 @@
-<script lang="ts" setup></script>
-
 <script lang="ts">
+import CheckoutResumeAttributes from "~/types/checkoutResumeAttributes.ts";
+
 export default {
   props: {
     attributes: {
-      type: Object,
+      type: CheckoutResumeAttributes,
     },
   },
   computed: {
-    shippingPrice: function () {
+    shippingPrice(): any {
       return this.attributes.estimated_shipping_costs_without_tax
         ? this.attributes.estimated_shipping_costs_without_tax + "€"
         : "Envío gratuito";
     },
-    priceWithTax: function () {
+    priceWithTax(): any {
       return this.attributes.subtotal_price - this.attributes.total_vat_taxes;
     },
   },
